@@ -36,7 +36,6 @@ export default class Facebook extends Component {
             <div style={{
                 width: '400px',
                 margin: 'auto',
-                background: '#f4f4f4',
                 padding: '20px'
             }}>
                 <img src={ picture } alt="facebook profile picture" />
