@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Facebook from './../Facebook';
 import './NavBar.css';
 
 const NavBar = (props) => {
@@ -87,6 +88,7 @@ const NavBar = (props) => {
             data-show-faces="true" 
             ata-auto-logout-link="false"
             data-use-continue-as="true">
+            <Facebook />
           </div>
         </div>
       </div>
