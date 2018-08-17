@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Main from './Main';
 import NavBar from './../components/NavBar/NavBar';
-import Facebook from './../components/Facebook';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +11,6 @@ class App extends Component {
         <NavBar />
         
         <h1>SixBySix</h1>
-        <Facebook />
-
         <Main />
       </div>
     );
