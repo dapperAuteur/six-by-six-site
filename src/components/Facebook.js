@@ -34,7 +34,7 @@ export default class Facebook extends Component {
           console.log(this.state); 
         fbContent = (
             <div style={{
-                width: '400px',
+                width: '100px',
                 margin: 'auto',
                 padding: '20px'
             }}>
