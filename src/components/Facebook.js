@@ -39,7 +39,7 @@ export default class Facebook extends Component {
                 background: '#f4f4f4',
                 padding: '20px'
             }}>
-                <img src={ picture } alt=`facebook profile picture of ${name}` />
+                <img src={ picture } alt="facebook profile picture" />
             </div>
         );
       } else {
