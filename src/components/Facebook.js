@@ -43,7 +43,7 @@ export default class Facebook extends Component {
     return (
       <div>
         { fbContent }
-        { picture }
+        <img src={ picture } alt="facebook profile picture" />
       </div>
     )
   }
