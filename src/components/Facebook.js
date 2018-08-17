@@ -25,11 +25,23 @@ export default class Facebook extends Component {
     };
   render() {
       let fbContent;
-      let picture = this.state.picture;
+      let {
+          name,
+          picture
+      } = this.state;
 
       if (this.state.isLoggedIn) {
           console.log(this.state); 
-        fbContent = null;
+        fbContent = (
+            <div style={{
+                width: '400px',
+                margin: 'auto',
+                background: '#f4f4f4',
+                padding: '20px'
+            }}>
+                <img src={ picture } alt=`facebook profile picture of ${name}` />
+            </div>
+        );
       } else {
           fbContent = (
             <FacebookLogin
@@ -43,7 +55,7 @@ export default class Facebook extends Component {
     return (
       <div>
         { fbContent }
-        <img src={ picture } alt="facebook profile picture" />
+        <img src={ picture }  />
       </div>
     )
   }
