@@ -79,45 +79,15 @@ const NavBar = (props) => {
           </div>
         </div>
         <div className='auth'>
-          { currentUser.token ?
-            <ul
-              className=''>
-              <li>
-                <button className=''>
-                  { currentUser.username }
-                </button>
-              </li>
-              <li>
-                <button
-                  className=''>
-                  <img
-                    src={ currentUser.profileImageUrl }
-                    alt='currentUser' />
-                </button>
-              </li>
-              <li>
-                <button
-                  className='btn btn-default'>
-                  Log out
-                </button>
-              </li>
-            </ul> :
-            <ul
-              className=''>
-              <li>
-                <button
-                  className='btn btn-default'>
-                  Sign up
-                </button>
-              </li>
-              <li>
-                <button
-                  className='btn btn-default'>
-                  Sign in
-                </button>
-              </li>
-            </ul>
-          }
+          <div
+            className="fb-login-button"
+            data-max-rows="1"
+            data-size="large"
+            data-button-type="continue_with"
+            data-show-faces="true" 
+            ata-auto-logout-link="false"
+            data-use-continue-as="true">
+          </div>
         </div>
       </div>
     </nav>
