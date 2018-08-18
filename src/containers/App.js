@@ -11,6 +11,7 @@ class App extends Component {
         <NavBar />
         
         <h1>SixBySix</h1>
+        <p>m.me/sixbysixvote</p>
         <Main />
       </div>
     );
