@@ -14,7 +14,7 @@
     <script>
         window.fbAsyncInit = function() {
             FB.init({
-            appId      : '1645178768938930',
+            appId      : '548140405619645', // 1645178768938930
             cookie     : true,
             xfbml      : true,
             version    : 'v3.1'
@@ -32,7 +32,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
             js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1645178768938930&autoLogAppEvents=1";
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=548140405619645&autoLogAppEvents=1";
             fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         
@@ -66,7 +66,7 @@
     <!-- Your customer chat code -->
     <div class="fb-customerchat"
         attribution=install_email
-        page_id="1859439217470688"
+        page_id="548140405619645"
         logged_in_greeting=""Hi! Would you like to accept the #sixbysix challenge. Login using Facebook!"
         logged_out_greeting=""Hi! Would you like to accept the #sixbysix challenge. Login using Facebook!">
     </div>
@@ -86,7 +86,6 @@
     <div class="hero-content-area">
       <h1>Mountain Travel</h1>
       <h3>Unmissable Adventure Tours Around The World</h3>
-      <!-- <a href="#" class="btn">Contact Us Now</a> -->
         <fb:login-button
             class="fb-login-button"
             data-max-rows="1" data-size="large"
@@ -97,7 +96,6 @@
             scope="public_profile,email,user_friends"
             onlogin="checkLoginState();">
         </fb:login-button>
-        <!-- <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="false" data-use-continue-as="true"></div> -->
     </div>
   </section>
   
