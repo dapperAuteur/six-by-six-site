@@ -23,7 +23,7 @@
     <script>
         window.fbAsyncInit = function() {
             FB.init({
-            appId      : '548140405619645', // 1645178768938930
+            appId      : '548140405619645', // 1645178768938930 old appId that Awe Ful created
             cookie     : true,
             xfbml      : true,
             version    : 'v3.1'
@@ -47,10 +47,20 @@
         
         function statusChangeCallback(response) {
             if (response.status === 'connected') {
-                console.log('Logged in & authenticated')
-                // console.log(response);
+                console.log('Logged in & authenticated');
+                console.log(response);
+            } if (response.status === 'authorization_expired') {
+              console.log('logged in previously but app authorization to access data expired');
+                console.log(response);
+            } if (response.status === 'not_authorized') {
+              console.log('logged into fb but no app authorization to access data');
+                console.log(response);
+            } if (response.status === 'unknown') {
+              console.log("user is either not logged into Facebook or explicitly logged out of your application so it doesn't attempt to connect to Facebook and thus, we don't know if they've authenticated your application or not.");
+                console.log(response);
             } else {
-                console.log('NOT Logged in & authenticated')
+                console.log("not unknown but not known why");
+                console.log(response);
             }
         }
 
