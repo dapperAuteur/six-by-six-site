@@ -163,7 +163,7 @@
       <a href="#" class="btn">Subscribe now</a>
     </form>
   </section>
-
+  <h1 id="bigOne"></h1>
   <footer>
     <p>Images courtesy of <a href="http://unsplash.com/">unsplash</a>.</p>
     <p>Why are you even reading this?! There's never anything interesting in the footer!</p>
@@ -173,6 +173,21 @@
       <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
     </ul>
   </footer>
-
+  <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBAzIzxb7lUHEgs4270yiInGydxejJi5V8",
+      authDomain: "js-react-todo-0002.firebaseapp.com",
+      databaseURL: "https://js-react-todo-0002.firebaseio.com",
+      projectId: "js-react-todo-0002",
+      storageBucket: "js-react-todo-0002.appspot.com",
+      messagingSenderId: "176868447038"
+    };
+    firebase.initializeApp(config);
+    var bigOne = document.getElementById("bigOne");
+    var dbRef = firebase.database().ref().child("text");
+    dbRef.on("value", snap => bigOne.innerText = snap.val());
+  </script>
 </body>
 </html>
