@@ -129,7 +129,7 @@ header nav li {
 /*Hero Styles*/
 
 .hero {
-	position: relative;
+	/* position: relative; */
 	justify-content: center;
 	text-align: center;
 	min-height: 100vh;
