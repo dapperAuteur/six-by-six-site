@@ -76,6 +76,10 @@ section p {
 	text-align: center;
 }
 
+.fb-link {
+	color: black;
+}
+
 @media (max-width: 800px) {
 	section {
 		padding: 50px 20px;
