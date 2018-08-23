@@ -138,8 +138,10 @@
         </fb:login-button>
     </div>
   </section>
-  <section class="destinations fb-link">
-    <a href=”fb-messenger://share/?link=https://www.facebook.com/sixbysixvote/&app_id=548140405619645”>Send In Messenger</a>
+  <section class="destinations">
+      <div
+        class="fb-share-button" data-href="https://js-react-todo-0002.firebaseapp.com/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjs-react-todo-0002.firebaseapp.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+      </div>
   </section>
   
   <section class="destinations">
@@ -207,7 +209,6 @@
   </footer>
   <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
   <script>
-    window.open('fb-messenger://share?link=' + encodeURIComponent("https://www.facebook.com/sixbysixvote/") + '&app_id=' + encodeURIComponent("548140405619645"));
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyBAzIzxb7lUHEgs4270yiInGydxejJi5V8",
